@@ -28,7 +28,7 @@
 
 			@if($datas)
 			@foreach($datas as $data)
-			<a href="{{ action('OperatorController@RespondTicket',[$data->id]) }}">
+			<a href="{{ url('ticket/respond/'. $data->id) }}">
 			<div class="callout callout-info">
 				<h4>#{{$data->id}} - {{App\user::find($data->employee_id)->getBureau()}}</h4>
 				<p>{{App\User::find($data->employee_id)->getName()}}</p>

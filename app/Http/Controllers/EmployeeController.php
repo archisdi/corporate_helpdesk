@@ -76,7 +76,6 @@ class employeeController extends Controller
         return redirect('tickets/view/active');
     }
 
-
     public function showManual(){
 
         return response()->download('uploads/manual.pdf');

@@ -28,11 +28,11 @@
 
 			@if($datas)
 			@foreach($datas as $data)
-			<!-- <a href="{{ action('PageController@ShowTicket',[$data->id]) }}"> -->
-
 			<div class="callout bg-{{App\Status::find($data->status_id)->getColor()}}">
+				<a href="{{url('/ticket/'. $data->id)}}">
 				<h4>#{{$data->id}} {{App\Status::find($data->status_id)->getName()}} @if($data->it_id)- {{App\User::find($data->it_id)->getName()}} @endif</h4>
-				<p>{{$data->description}}</p>
+				</a>
+					<p>{{$data->description}}</p>
 				<p>{{$data->created_at}}</p>
 
 				@if($data->status_id == 5)
@@ -56,12 +56,13 @@
 												<input type="text" name="temp" class="form-control" required="">
 											</div>
 										</div>
+									</fieldset>
 									</div>
 									<div class="modal-footer">
 										{!! Form::button('Cancel', ['class' => 'btn btn-outline pull-left', 'data-dismiss' => 'modal']) !!}
 										{!! Form::submit('Confirm Denial', ['class' => 'btn btn-outline'])  !!}
 									</div>
-									{!! Form::close() !!} 
+									{!! Form::close() !!}
 
 								</fieldset>
 							</div><!-- /.modal-content -->
@@ -78,19 +79,18 @@
 								</div>
 								<div class="modal-body">
 									<fieldset>
-										{!! Form::open(['url' => 'ticket']) !!}  
+										{!! Form::open(['url' => 'ticket']) !!}
 
 										{!! Form::hidden('respond_id', '1', null) !!}
 										{!! Form::hidden('id', $data->id, null) !!}
 
-									
+
 										{!! Form::button('Cancel', ['class' => 'btn btn-outline pull-left', 'data-dismiss' => 'modal']) !!}
 										{!! Form::submit('Confirm Completion', ['class' => 'btn btn-outline pull-right'])  !!}
-									
-									{!! Form::close() !!} 
-									</div>
 
-								</fieldset>
+									{!! Form::close() !!}
+									</fieldset>
+								</div>
 							</div><!-- /.modal-content -->
 						</div><!-- /.modal-dialog -->
 					</div><!-- /.modal -->

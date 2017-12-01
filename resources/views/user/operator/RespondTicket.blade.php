@@ -104,7 +104,6 @@ Respond Tickets
 					</div>
 					{!! Form::close() !!} 
 
-				</fieldset>
 			</div><!-- /.modal-content -->
 		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->

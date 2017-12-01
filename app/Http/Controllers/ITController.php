@@ -45,7 +45,7 @@ class ITController extends Controller
     	return view('user.it.AssignmentDetail',compact('data'));
     }
 
-    public function DO(Request $request){
+    public function process(Request $request){
 
       $data = Request::all();
 

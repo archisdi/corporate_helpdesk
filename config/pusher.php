@@ -38,10 +38,13 @@ return [
     'connections' => [
 
     'main' => [
-        'auth_key' => env('PUSHER_KEY'),
-        'secret' => env('PUSHER_SECRET'),
-        'app_id' => env('PUSHER_APP_ID'),
-        'options' => [],
+        'auth_key' => '51075af375c338e9e965',
+        'secret' => 'a651885fa98538cfa8f4',
+        'app_id' => '196856',
+        'options' => [
+            'cluster' => 'ap1',
+            'encrypted' => true
+        ],
         'host' => env('PUSHER_HOST'),
         'port' => null,
         'timeout' => null,

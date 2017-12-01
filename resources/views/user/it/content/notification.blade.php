@@ -1,5 +1,5 @@
 <script>
-	var pusher = new Pusher("{{env("PUSHER_KEY")}}", {
+    var pusher = new Pusher("51075af375c338e9e965", {
 		cluster: 'ap1',
 		encrypted: true
 	});

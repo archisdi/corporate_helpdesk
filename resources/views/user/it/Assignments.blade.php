@@ -33,7 +33,7 @@
 				<li class="bg-aqua">
 					<!-- drag handle -->
 					<span class="handle">
-						<a href="{{ action('ITController@ShowAssignmentDetail',[$data->id]) }}">
+						<a href="{{ url('assignments/'. $data->id) }}">
 							<i class="fa fa-ellipsis-v"></i>
 							<i class="fa fa-ellipsis-v"></i>
 						</a>
