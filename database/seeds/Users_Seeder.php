@@ -28,7 +28,7 @@ class Users_Seeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Edwina Anky Rarande',
+            'name' => 'Edwina Anky Parande',
             'username' => 'edwinanki',
             'birth' => '1996-04-27',
             'gender' => 'female',
@@ -88,7 +88,7 @@ class Users_Seeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'hafizha Fauzani',
+            'name' => 'Hafizha Fauzani',
             'username' => 'hafizha',
             'birth' => '1996-12-12',
             'gender' => 'female',
@@ -100,6 +100,21 @@ class Users_Seeder extends Seeder
             'role' => 'it',
             'email' => 'hafizha@gmail.com',
             'password' => bcrypt('hafizha'),
+        ]);
+
+        User::create([
+            'name' => 'Nira Sarafina',
+            'username' => 'nirasarafina',
+            'birth' => '1996-12-12',
+            'gender' => 'female',
+            'address' => 'Telkom University Bandung',
+            'bureau_id' => '1',
+            'position' => 'Staff',
+            'est' => '2017',
+            'img' => 'nira.jpg',
+            'role' => 'it',
+            'email' => 'nirasarafina@gmail.com',
+            'password' => bcrypt('nirasarafina'),
         ]);
 
     	User::create([
@@ -343,18 +358,18 @@ class Users_Seeder extends Seeder
         ]);
 
         User::create([
-            'name' => 'Ikrimah Muiz',
-            'username' => 'ikrimah',
+            'name' => 'lanny Septiany',
+            'username' => 'lanny',
             'birth' => '1995-01-28',
-            'gender' => 'male',
-            'address' => 'Green House',
-            'bureau_id' => '4',
+            'gender' => 'female',
+            'address' => 'Bandung',
+            'bureau_id' => '5',
             'position' => 'Manager',
-            'est' => '2013',
-            'img' => 'default.png',
+            'est' => '2017',
+            'img' => 'lanny.jpg',
             'role' => 'employee',
-            'email' => 'ikrimah@gmail.com',
-            'password' => bcrypt('ikrimah'),
+            'email' => 'lanny@gmail.com',
+            'password' => bcrypt('lanny'),
         ]);
 
     }
