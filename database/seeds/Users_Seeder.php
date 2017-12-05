@@ -13,19 +13,34 @@ class Users_Seeder extends Seeder
     public function run()
     {
         User::create([
-    		'name' => 'Archie Isdiningrat',
-    		'username' => 'archisdiningrat',
-    		'birth' => '1995-11-21',
-    		'gender' => 'male',
-    		'address' => 'Telkom University Bandung',
-    		'bureau_id' => '1',
-    		'position' => 'Manager',
-    		'est' => '2013',
-    		'img' => 'archisdiningrat.jpg',
-    		'role' => 'operator',
-    		'email' => 'archie.isdiningrat@gmail.com',
-    		'password' => bcrypt('becauseofyou'),
-    		]);
+            'name' => 'Archie Isdiningrat',
+            'username' => 'archisdiningrat',
+            'birth' => '1995-11-21',
+            'gender' => 'male',
+            'address' => 'Telkom University Bandung',
+            'bureau_id' => '1',
+            'position' => 'Manager',
+            'est' => '2013',
+            'img' => 'archisdiningrat.jpg',
+            'role' => 'operator',
+            'email' => 'archie.isdiningrat@gmail.com',
+            'password' => bcrypt('becauseofyou'),
+        ]);
+
+        User::create([
+            'name' => 'Edwina Anky Rarande',
+            'username' => 'edwinanki',
+            'birth' => '1996-04-27',
+            'gender' => 'female',
+            'address' => 'Telkom University Bandung',
+            'bureau_id' => '1',
+            'position' => 'Manager',
+            'est' => '2017',
+            'img' => 'edwina.png',
+            'role' => 'operator',
+            'email' => 'edwina.ankyparande@gmail.com',
+            'password' => bcrypt('edwinanki'),
+        ]);
 
     	User::create([
     		'name' => 'Bunga Dwipa',
@@ -57,20 +72,35 @@ class Users_Seeder extends Seeder
             'password' => bcrypt('vichaoctavia'),
             ]);
 
-    	User::create([
-    		'name' => 'Elrizky Mardhi',
-    		'username' => 'elrizky',
-    		'birth' => '1995-10-25',
-    		'gender' => 'male',
-    		'address' => 'Telkom University Bandung',
-    		'bureau_id' => '1',
-    		'position' => 'Staff',
-    		'est' => '2013',
-    		'img' => 'elrizky.jpg',
-    		'role' => 'it',
-    		'email' => 'elrizkimardhi@gmail.com',
-    		'password' => bcrypt('elrizky'),
-    		]);
+        User::create([
+            'name' => 'Elrizky Mardhi',
+            'username' => 'elrizky',
+            'birth' => '1995-10-25',
+            'gender' => 'male',
+            'address' => 'Telkom University Bandung',
+            'bureau_id' => '1',
+            'position' => 'Staff',
+            'est' => '2013',
+            'img' => 'elrizky.jpg',
+            'role' => 'it',
+            'email' => 'elrizkimardhi@gmail.com',
+            'password' => bcrypt('elrizky'),
+        ]);
+
+        User::create([
+            'name' => 'hafizha Fauzani',
+            'username' => 'hafizha',
+            'birth' => '1996-12-12',
+            'gender' => 'female',
+            'address' => 'Telkom University Bandung',
+            'bureau_id' => '1',
+            'position' => 'Staff',
+            'est' => '2013',
+            'img' => 'hafizha.png',
+            'role' => 'it',
+            'email' => 'hafizha@gmail.com',
+            'password' => bcrypt('hafizha'),
+        ]);
 
     	User::create([
     		'name' => 'Faisal Nuqobasidqy',
@@ -310,7 +340,22 @@ class Users_Seeder extends Seeder
             'role' => 'employee',
             'email' => 'danangjunaedi@gmail.com',
             'password' => bcrypt('danangjunaedi'),
-            ]);
+        ]);
+
+        User::create([
+            'name' => 'Ikrimah Muiz',
+            'username' => 'ikrimah',
+            'birth' => '1995-01-28',
+            'gender' => 'male',
+            'address' => 'Green House',
+            'bureau_id' => '4',
+            'position' => 'Manager',
+            'est' => '2013',
+            'img' => 'default.png',
+            'role' => 'employee',
+            'email' => 'ikrimah@gmail.com',
+            'password' => bcrypt('ikrimah'),
+        ]);
 
     }
 }
